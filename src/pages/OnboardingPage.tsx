@@ -59,7 +59,7 @@ const OnboardingPage = ({ onComplete }: { onComplete?: () => void }) => {
           ))}
         </div>
         <Button
-          onClick={() => (step < steps.length - 1 ? setStep(step + 1) : completeOnboarding())}
+          onClick={() => (step < steps.length - 1 ? setStep(step + 1) : finish())}
           className="w-full h-14 text-base font-semibold rounded-xl"
           size="lg"
         >
