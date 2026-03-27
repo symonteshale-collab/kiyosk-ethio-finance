@@ -26,7 +26,7 @@ const OnboardingPage = ({ onComplete }: { onComplete?: () => void }) => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-between px-6 py-12 bg-background">
-      <button onClick={completeOnboarding} className="self-end text-sm text-muted-foreground font-medium">
+      <button onClick={finish} className="self-end text-sm text-muted-foreground font-medium">
         {t("skip")}
       </button>
 
