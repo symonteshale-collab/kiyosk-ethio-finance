@@ -16,7 +16,7 @@ const AppShell = () => {
 
   if (!isLoggedIn) return <SignInPage />;
   if (!hasSeenOnboarding || showTutorial) {
-    return <OnboardingPage />;
+    return <OnboardingPage onComplete={() => setShowTutorial(false)} />;
   }
 
   const renderPage = () => {

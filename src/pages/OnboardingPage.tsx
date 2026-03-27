@@ -5,9 +5,14 @@ import { Button } from "@/components/ui/button";
 import { TrendingUp, Camera, Users, BarChart3 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const OnboardingPage = () => {
+const OnboardingPage = ({ onComplete }: { onComplete?: () => void }) => {
   const { t } = useLanguage();
   const { completeOnboarding } = useApp();
+
+  const finish = () => {
+    completeOnboarding();
+    onComplete?.();
+  };
   const [step, setStep] = useState(0);
 
   const steps = [
