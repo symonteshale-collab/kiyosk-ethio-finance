@@ -1,16 +1,48 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { LanguageProvider } from "@/contexts/LanguageContext";
+import { AppProvider, useApp } from "@/contexts/AppContext";
+import BottomNav from "@/components/BottomNav";
+import SignInPage from "./SignInPage";
+import OnboardingPage from "./OnboardingPage";
+import DashboardPage from "./DashboardPage";
+import ScannerPage from "./ScannerPage";
+import CustomersPage from "./CustomersPage";
+import MenuPage from "./MenuPage";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const AppShell = () => {
+  const { isLoggedIn, hasSeenOnboarding } = useApp();
+  const [page, setPage] = useState("home");
+  const [showTutorial, setShowTutorial] = useState(false);
+
+  if (!isLoggedIn) return <SignInPage />;
+  if (!hasSeenOnboarding || showTutorial) {
+    return <OnboardingPage onComplete={() => setShowTutorial(false)} />;
+  }
+
+  const renderPage = () => {
+    switch (page) {
+      case "home": return <DashboardPage />;
+      case "scanner": return <ScannerPage />;
+      case "customers": return <CustomersPage />;
+      case "menu": return <MenuPage onShowTutorial={() => setShowTutorial(true)} />;
+      default: return <DashboardPage />;
+    }
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background">
+      {renderPage()}
+      <BottomNav active={page} onNavigate={setPage} />
     </div>
   );
 };
 
-const Index = PlaceholderIndex;
+const Index = () => (
+  <LanguageProvider>
+    <AppProvider>
+      <AppShell />
+    </AppProvider>
+  </LanguageProvider>
+);
 
 export default Index;
