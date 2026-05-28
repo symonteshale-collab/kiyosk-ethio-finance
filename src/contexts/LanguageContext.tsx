@@ -63,7 +63,7 @@ const translations: Record<string, Record<Lang, string>> = {
   noReceipts: { en: "No receipts saved yet", am: "ገና ምንም ደረሰኝ አልተቀመጠም" },
   today: { en: "Today", am: "ዛሬ" },
   signOut: { en: "Sign Out", am: "ውጣ" },
-  privacyPolicy: { en: "Privacy Policy", am: "የፀረ ሚኒስትር ፖሊሲ" },
+  privacyPolicy: { en: "Privacy Policy", am: "የግል መረጃ ፖሊሲ" },
   privacyIntro: { en: "Your privacy matters. This page explains how Kiyosk handles your data.", am: "የእርስዎ ግላዊነት አስፈላጊ ነው። ይህ ገጽ ኪዮስክ የእርስዎን ውሂብ እንዴት እንደሚይዝ ያብራራል።" },
   dataWeCollect: { en: "What Data We Collect", am: "የትኛውን ውሂብ እንደምንሰብስብ" },
   dataWeCollectDesc: { en: "Kiyosk stores your business records directly on your device. This includes transactions (income, expenses), customer names, amounts owed, and receipt photos you choose to save. We do not collect or upload this data to any server.", am: "ኪዮስክ የንግድ መዝገቦችዎን በቀጥታ በእርስዎ መሳሪያ ላይ ያስቀምጣል። ይህ ግብይቶች (ገቢ፣ ወጪ)፣ የደንበኞች ስሞች፣ የተቀረው መጠን እና ለማስቀመጥ የመረጡት የደረሰኝ ፎቶዎችን ያጠቃልላል። ይህንን ውሂብ ወደ ምንም ሰርቨር አንለጥፍም።" },
