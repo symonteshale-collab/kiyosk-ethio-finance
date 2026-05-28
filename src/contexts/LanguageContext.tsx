@@ -63,6 +63,20 @@ const translations: Record<string, Record<Lang, string>> = {
   noReceipts: { en: "No receipts saved yet", am: "ገና ምንም ደረሰኝ አልተቀመጠም" },
   today: { en: "Today", am: "ዛሬ" },
   signOut: { en: "Sign Out", am: "ውጣ" },
+  privacyPolicy: { en: "Privacy Policy", am: "የግል መረጃ ፖሊሲ" },
+  privacyIntro: { en: "Your privacy matters. This page explains how Kiyosk handles your data.", am: "የእርስዎ ግላዊነት አስፈላጊ ነው። ይህ ገጽ ኪዮስክ የእርስዎን ውሂብ እንዴት እንደሚይዝ ያብራራል።" },
+  dataWeCollect: { en: "What Data We Collect", am: "የትኛውን ውሂብ እንደምንሰብስብ" },
+  dataWeCollectDesc: { en: "Kiyosk stores your business records directly on your device. This includes transactions (income, expenses), customer names, amounts owed, and receipt photos you choose to save. We do not collect or upload this data to any server.", am: "ኪዮስክ የንግድ መዝገቦችዎን በቀጥታ በእርስዎ መሳሪያ ላይ ያስቀምጣል። ይህ ግብይቶች (ገቢ፣ ወጪ)፣ የደንበኞች ስሞች፣ የተቀረው መጠን እና ለማስቀመጥ የመረጡት የደረሰኝ ፎቶዎችን ያጠቃልላል። ይህንን ውሂብ ወደ ምንም ሰርቨር አንለጥፍም።" },
+  howWeUse: { en: "How We Use Your Data", am: "ውሂብዎን እንዴት እንጠቀምበት" },
+  howWeUseDesc: { en: "Your data is used only to power the app's features: showing your dashboard, tracking debts, and displaying saved receipts. All processing happens on your device. We do not share, sell, or transmit your data to third parties.", am: "የእርስዎ ውሂብ የመተግበሪያውን ባህሪያት ለማስጠላልበት ብቻ ይጠቀማል፦ ዳሽቦርድዎን ማሳየት፣ ዕዳን መከታተል እና የተቀመጡ ደረሰኞችን ማሳየት። ሁሉም ማቀነባበሪያ በእርስዎ መሳሪያ ላይ ይከናወናል። የእርስዎን ውሂብ ለሦስተኛ ወገኖች አንጋራም፣ አንሽጥም ወይም አንላክም።" },
+  storedCredentials: { en: "Email & Password", am: "ኢሜይል እና የይለፍ ቃል" },
+  storedCredentialsDesc: { en: "Kiyosk does not store your email or password on any server. The sign-in screen is for demonstration only. All data remains on your device.", am: "ኪዮስክ የእርስዎን ኢሜይል ወይም የይለፍ ቃል በምንም ሰርቨር ላይ አይቀምጥም። የመግቢያ ገጹ ለማሳያ ብቻ ነው። ሁሉም ውሂብ በእርስዎ መሳሪያ ላይ ይቆያል።" },
+  analyticsAndAds: { en: "Analytics & Advertising", am: "አናሌቲክስ እና ማስታወቂያ" },
+  analyticsAndAdsDesc: { en: "Kiyosk does not use any analytics tools, tracking pixels, or advertising networks. We do not track your behavior inside or outside the app.", am: "ኪዮስክ ምንም የአናሌቲክስ መሳሪያዎችን፣ የመከታተያ ፒክሰሎችን ወይም የማስታወቂያ አውታረመረቦችን አይጠቀምም። እንቅስቃሴዎን በመተግበሪያው ውስጥ ወይም ከእሱ ውጭ አንከታተልም።" },
+  yourRights: { en: "Your Rights", am: "መብቶችዎ" },
+  yourRightsDesc: { en: "Since all data is stored locally, you have full control. You can clear all app data at any time by deleting the app or clearing your browser storage.", am: "ሁሉም ውሂብ በአካባቢያዊ ስለሚያስቀምጥ፣ ሙሉ ቁጥጥር አለዎት። መተግበሪያውን በማጥፋት ወይም የአሳሽዎን ማከማቻ በማጽዳት በማንኛውም ጊዜ ሁሉንም የመተግበሪያ ውሂብ መንጥፍ ይችላሉ።" },
+  lastUpdated: { en: "Last updated: May 2026", am: "መጨረሻ ማሻሻያ፦ ግንቦት 2026" },
+  back: { en: "Back", am: "ተመለስ" },
 };
 
 interface LanguageContextType {

@@ -1,18 +1,20 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useApp } from "@/contexts/AppContext";
-import { BookOpen, Globe, Settings, HelpCircle, LogOut } from "lucide-react";
+import { BookOpen, Globe, Settings, HelpCircle, LogOut, FileText } from "lucide-react";
 
 interface MenuPageProps {
   onShowTutorial: () => void;
+  onShowPrivacy: () => void;
 }
 
-const MenuPage = ({ onShowTutorial }: MenuPageProps) => {
+const MenuPage = ({ onShowTutorial, onShowPrivacy }: MenuPageProps) => {
   const { t, lang, setLang } = useLanguage();
   const { logout } = useApp();
 
   const items = [
     { icon: BookOpen, label: t("tutorial"), action: onShowTutorial },
     { icon: Globe, label: t("language"), action: () => setLang(lang === "en" ? "am" : "en"), extra: lang === "en" ? "English → አማርኛ" : "አማርኛ → English" },
+    { icon: FileText, label: t("privacyPolicy"), action: onShowPrivacy },
     { icon: Settings, label: t("settings"), action: () => {} },
     { icon: HelpCircle, label: t("help"), action: () => {} },
     { icon: LogOut, label: t("signOut"), action: logout, destructive: true },

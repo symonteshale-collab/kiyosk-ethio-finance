@@ -8,15 +8,21 @@ import DashboardPage from "./DashboardPage";
 import ScannerPage from "./ScannerPage";
 import CustomersPage from "./CustomersPage";
 import MenuPage from "./MenuPage";
+import PrivacyPolicyPage from "./PrivacyPolicyPage";
 
 const AppShell = () => {
   const { isLoggedIn, hasSeenOnboarding } = useApp();
   const [page, setPage] = useState("home");
   const [showTutorial, setShowTutorial] = useState(false);
+  const [showPrivacy, setShowPrivacy] = useState(false);
 
   if (!isLoggedIn) return <SignInPage />;
   if (!hasSeenOnboarding || showTutorial) {
     return <OnboardingPage onComplete={() => setShowTutorial(false)} />;
+  }
+
+  if (showPrivacy) {
+    return <PrivacyPolicyPage onBack={() => setShowPrivacy(false)} />;
   }
 
   const renderPage = () => {
@@ -24,7 +30,7 @@ const AppShell = () => {
       case "home": return <DashboardPage />;
       case "scanner": return <ScannerPage />;
       case "customers": return <CustomersPage />;
-      case "menu": return <MenuPage onShowTutorial={() => setShowTutorial(true)} />;
+      case "menu": return <MenuPage onShowTutorial={() => setShowTutorial(true)} onShowPrivacy={() => setShowPrivacy(true)} />;
       default: return <DashboardPage />;
     }
   };
