@@ -11,7 +11,7 @@ const Section = ({
   title,
   description,
 }: {
-  icon: React.ElementType;
+  icon: LucideIcon;
   title: string;
   description: string;
 }) => (
