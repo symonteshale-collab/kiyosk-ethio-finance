@@ -72,7 +72,7 @@ const translations: Record<string, Record<Lang, string>> = {
   storedCredentials: { en: "Email & Password", am: "ኢሜይል እና የይለፍ ቃል" },
   storedCredentialsDesc: { en: "Kiyosk does not store your email or password on any server. The sign-in screen is for demonstration only. All data remains on your device.", am: "ኪዮስክ የእርስዎን ኢሜይል ወይም የይለፍ ቃል በምንም ሰርቨር ላይ አይቀምጥም። የመግቢያ ገጹ ለማሳያ ብቻ ነው። ሁሉም ውሂብ በእርስዎ መሳሪያ ላይ ይቆያል።" },
   analyticsAndAds: { en: "Analytics & Advertising", am: "አናሌቲክስ እና ማስታወቂያ" },
-  analyticsAndAdsDesc: { en: "Kiyosk does not use any analytics tools, tracking pixels, or advertising networks. We do not track your behavior inside or outside the app.", am: "ኪዮስክ ምንም የአናሌቲክስ መሳሪያዎችን፣ የመከታተያ ፒክሰሎችን ወይም የማስታወቂያ አውታረመረቦችን አይጠቀምም። ፍሰገናን ስራዎን በመተግበሪያው ውስጥ ወይም ከእሱ ውጭ አንከታተልም።" },
+  analyticsAndAdsDesc: { en: "Kiyosk does not use any analytics tools, tracking pixels, or advertising networks. We do not track your behavior inside or outside the app.", am: "ኪዮስክ ምንም የአናሌቲክስ መሳሪያዎችን፣ የመከታተያ ፒክሰሎችን ወይም የማስታወቂያ አውታረመረቦችን አይጠቀምም። እንቅስቃሴዎን በመተግበሪያው ውስጥ ወይም ከእሱ ውጭ አንከታተልም።" },
   yourRights: { en: "Your Rights", am: "መብቶችዎ" },
   yourRightsDesc: { en: "Since all data is stored locally, you have full control. You can clear all app data at any time by deleting the app or clearing your browser storage.", am: "ሁሉም ውሂብ በአካባቢያዊ ስለሚያስቀምጥ፣ ሙሉ ቁጥጥር አለዎት። መተግበሪያውን በማጥፋት ወይም የአሳሽዎን ማከማቻ በማጽዳት በማንኛውም ጊዜ ሁሉንም የመተግበሪያ ውሂብ መንጥፍ ይችላሉ።" },
   lastUpdated: { en: "Last updated: May 2026", am: "መጨረሻ ማሻሻያ፦ ግንቦት 2026" },
