@@ -1,5 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ArrowLeft, Database, Eye, Lock, Shield, UserX, Calendar } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 interface PrivacyPolicyPageProps {
   onBack: () => void;
